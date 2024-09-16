@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@compiiile/compiiile": "^2.14.0"
+  },
+  "scripts": {
+    "dev": "compiiile dev",
+    "build": "compiiile build",
+    "preview": "compiiile preview"
+  }
+}
