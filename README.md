@@ -373,6 +373,8 @@ _Example_
 Full Get Result Response
 
 ```
+[GET] api/v4/session/66e18XXXXXXXXXXXXXXc558/result
+
 {
   "sessionId": "66e18XXXXXXXXXXXXXXc558",
   "flowId": "66e82XXXXXXXXXXXXXXXe038",
