@@ -1,4 +1,33 @@
-![Logo](./SONIO_LOGO.jpg)
+<!-- ![Logo](./.compiiile/public/sonio_light.jpg) -->
+<img id="logo" src="sonio_light.jpg" alt="Logo" style="width: auto; height: auto; padding-bottom: 40px;" />
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const logo = document.getElementById('logo'); // Assuming the logo has an ID 'logo'
+
+    const setLogo = () => {
+      const htmlElement = document.documentElement; // Select the <html> element
+
+      if (htmlElement.classList.contains('theme--dark')) {
+        logo.src = './sonio_dark.png'; // Switch to dark mode logo
+      } else {
+        logo.src = './sonio_light.png'; // Switch to light mode logo
+      }
+    };
+
+    // Call the function initially to set the logo on page load
+    setLogo();
+
+    // Optionally, if theme can change dynamically, listen for class changes (MutationObserver)
+    const observer = new MutationObserver(() => {
+      setLogo();
+    });
+
+    // Start observing the <html> element for attribute/class changes
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+  });
+</script>
+<!-- <script src="/theme-logo-switch.js"></script> -->
 
 # API Reference
 
@@ -26,9 +55,8 @@ If you have any support request or feedback, please reach out to us at alexandre
 | `countryCode` | `string` | (optional, ISO 3166 country code)                                              |
 | `language`    | `string` | (optional, ISO 639-1 default “en”, supported: en, de, tr)                      |
 | `referenceId` | `string` | (optional, external reference used to identify a user coming from your system) |
-| `language`    | `string` | (optional, ISO 639-1 default “en”, supported: en, de, tr)                      |
 
-Required only for the data matching:
+<u>**Required only for the data matching**:</u>
 
 **Person**
 
@@ -128,7 +156,7 @@ _Example_
 }
 ```
 
-Checks
+**Checks**
 
 | Data Field  | Type     | Description                                                                                          |
 | :---------- | :------- | :--------------------------------------------------------------------------------------------------- |
@@ -226,7 +254,7 @@ PoA with Schufa response structure
 ]
 ```
 
-Processed Data
+<u>**Processed Data**</u>
 
 Person - For POI or POA or any check that returns personal details
 
