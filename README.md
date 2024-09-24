@@ -110,6 +110,26 @@ _Example_
 }
 ```
 
+### **Create a session (Open banking)**
+
+To create a session via Open Banking, use the same payload as for IDV, with the addition of the person’s first and last name, which are required for accurate data matching.
+
+_Example_
+
+```
+{
+  "customerId": "CUSTOMERID",
+  "language": "en",
+  "flowId": "FLOWID",
+  "redirectURL": "https://google.com",
+  "referenceId": "000000",
+  "person": {
+    "firstname": "name",
+    "lastname": "surname"
+  }
+}
+```
+
 **Response** (JSON)
 
 Contains information (id, date created, expire, start url for starting the identification) OR error message.
@@ -158,23 +178,24 @@ _Example_
 
 **Checks**
 
-| Data Field  | Type     | Description                                                                                          |
-| :---------- | :------- | :--------------------------------------------------------------------------------------------------- |
-| `poi`       | `array`  | CHECK_DATA. data collected in proof of identity step                                                 |
-| `poa`       | `array`  | CHECK_DATA . data collected in proof of address step, where the data structure differs per provider. |
-| `watchlist` | `object` | CHECK_DATA. data collected from AML, PEP, AM data bases                                              |
+| Data Field  | Type     | Description                                                                                         |
+| :---------- | :------- | :-------------------------------------------------------------------------------------------------- |
+| `poi`       | `array`  | CHECK_DATA: Data collected in proof of identity step                                                |
+| `poa`       | `array`  | CHECK_DATA: Data collected in proof of address step, where the data structure differs per provider. |
+| `ais`       | `object` | CHECK_DATA: (Open Banking) Data collected in bank account verification step                         |
+| `watchlist` | `object` | CHECK_DATA: Data collected from AML, PEP, AM data bases                                             |
 
 CHECK_DATA
 
-| Data Field      | Type     | Description                                                                                         |
-| :-------------- | :------- | :-------------------------------------------------------------------------------------------------- |
-| `provider`      | `string` | Data provider name                                                                                  |
-| `status`        | `string` | Status of the check. PENDING, STARTED COMPLETED, PART (some checks have several steps to complete.) |
-| `validation`    | `string` | The result of the check. PENDING, PASS, FAIL, NEEDS_REVIEW, SKIP                                    |
-| `reason`        | `string` | The fail or needs review reason message                                                             |
-| `reasonDetails` | `string` | Details of the validation fail or need review                                                       |
-| `data`          | `string` | Raw provider data. We supply examples for each provider.                                            |
-| `processedData` | `string` | Depending on check type or provider we can send different kind of data                              |
+| Data Field      | Type     | Description                                                                                                  |
+| :-------------- | :------- | :----------------------------------------------------------------------------------------------------------- |
+| `provider`      | `string` | Data provider name                                                                                           |
+| `status`        | `string` | The flow Status of the check. PENDING, STARTED COMPLETED, PART (some checks have several steps to complete.) |
+| `validation`    | `string` | The result of the check. PENDING, PASS, FAIL, NEEDS_REVIEW, SKIP                                             |
+| `reason`        | `string` | The fail or needs review reason message                                                                      |
+| `reasonDetails` | `string` | Details of the validation fail or need review                                                                |
+| `data`          | `string` | Raw provider data. We supply examples for each provider.                                                     |
+| `processedData` | `string` | Depending on check type or provider we can send different kind of data                                       |
 
 _Example_
 
@@ -370,7 +391,9 @@ _Example_
    }
 ```
 
-Full Get Result Response
+#### Example Get Results Responses
+
+##### Full Get Result Response
 
 ```
 [GET] api/v4/session/66e18XXXXXXXXXXXXXXc558/result
@@ -896,6 +919,12 @@ Full Get Result Response
   }
 }
 ```
+
+##### Open Banking – Affordability
+
+##### Open Banking – Verify
+
+##### Open Banking – Verify & Deposit
 
 ## Webhooks
 
