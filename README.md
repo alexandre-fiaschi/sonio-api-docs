@@ -123,6 +123,7 @@ Contains information (id, date created, expire, start url for starting the ident
    "updatedDate":"2023-12-21T11:54:56+01:00",
    "expireDate":"2024-01-05T11:54:56+01:00"
 }
+```
 
 ### **Create a session (Open banking)**
 
@@ -161,13 +162,13 @@ Contains information (id, date created, expire, start url for starting the ident
 "expireDate":"2024-01-05T11:54:56+01:00"
 }
 
-````
+```
 
 ### Get results
 
 ```http
   GET api/v4/session/:{sessionId}/result
-````
+```
 
 The response has a JSON structure. Calling the endpoint results in receiving all checks defined by the flowId in the same order, an overall status (flowStatus) and uploaded documents.
 
