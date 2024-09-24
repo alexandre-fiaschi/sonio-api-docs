@@ -1,0 +1,11 @@
+{
+  "customerId": "CUSTOMERID",
+  "language": "en",
+  "flowId": "FLOWID",
+  "redirectURL": "https://google.com",
+  "referenceId": "000000",
+  "person": {
+    "firstname": "name",
+    "lastname": "surname"
+  }
+}

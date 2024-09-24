@@ -132,19 +132,17 @@ To create a session via Open Banking, use the same payload as for IDV, with the 
 _Example_
 
 ```
-
 {
-"customerId": "CUSTOMERID",
-"language": "en",
-"flowId": "FLOWID",
-"redirectURL": "https://google.com",
-"referenceId": "000000",
-"person": {
-"firstname": "name",
-"lastname": "surname"
+  "customerId": "CUSTOMERID",
+  "language": "en",
+  "flowId": "FLOWID",
+  "redirectURL": "https://google.com",
+  "referenceId": "000000",
+  "person": {
+    "firstname": "name",
+    "lastname": "surname"
+  }
 }
-}
-
 ```
 
 **Response** (JSON)
@@ -152,16 +150,14 @@ _Example_
 Contains information (id, date created, expire, start url for starting the identification) OR error message.
 
 ```
-
 {
-"sessionId":"65841980bxxxxxa76e954c8a",
-"startURL":"https://staging.id.sonio-group.com/start/en/64d1xxxxx9249f9fe9ff/?session=65841980bb9616xxxxxx4c8a&flowid=6526 590a8abxxxxxb5b44e39",
-"createdDate":"2023-12-21T11:54:56+01:00",
-"referenceId": "externalUserID1234556",
-"updatedDate":"2023-12-21T11:54:56+01:00",
-"expireDate":"2024-01-05T11:54:56+01:00"
+   "sessionId":"65841980bxxxxxa76e954c8a",
+   "startURL":"https://staging.id.sonio-group.com/start/en/64d1xxxxx9249f9fe9ff/?session=65841980bb9616xxxxxx4c8a&flowid=6526 590a8abxxxxxb5b44e39",
+   "createdDate":"2023-12-21T11:54:56+01:00",
+   "referenceId": "externalUserID1234556",
+   "updatedDate":"2023-12-21T11:54:56+01:00",
+   "expireDate":"2024-01-05T11:54:56+01:00"
 }
-
 ```
 
 ### Get results
