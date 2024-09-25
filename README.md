@@ -935,6 +935,88 @@ _Example_
 }
 ```
 
+##### Open Banking – Bank Indent (PoI)
+
+The data object contains all values returned from Tink’s verification process. The xs2a_name_check object holds the results of the name check performed by Tink.
+
+_Example_
+
+```
+{
+    "sessionId": "640fXXXXXXXXXXXXXXXda094",
+    "flowId": "6697XXXXXXXXXXXXXXXXX865",
+    "referenceId": null,
+    "checks": {
+        "poi": [
+            {
+                "provider": "tink",
+                "status": "COMPLETED",
+                "validation": "PASS",
+                "score": "0",
+                "reason": "",
+                "reasonDetails": "",
+                "externalIds": {
+                    "tinkTransaction": "13710-xr-Nfqw-IQ63",
+                    "wizzardSessionKey": "CNWw5HO6YiVXBD7djYnurG7uOQJyEZgmw5B7EKVA"
+                },
+                "data": {
+                    "id": "xr_JwHX357024p9lVK3",
+                    "transaction": "13710-xr-Nfqw-IQ63",
+                    "account_holder": "MUSTERMANN, HARTMUT",
+                    "iban": "DE62888888880012345678",
+                    "bic": "TESTDE88XXX",
+                    "bank_name": "Testbank",
+                    "country_id": "DE",
+                    "testmode": "1",
+                    "created_at": "2024-09-25 10:00:54",
+                    "metadata": {
+                        "my_policy": "on"
+                    },
+                    "merchant_id": "",
+                    "object": "xs2a_risk",
+                    "xs2a_name_check": {
+                        "name": "MUSTERMANN",
+                        "firstname": "HARTMUT",
+                        "match": "1",
+                        "similarity": 100,
+                        "created_at": "2024-09-25 10:00:54",
+                        "object": "xs2a_name_check"
+                    }
+                },
+                "processedData": null
+            }
+        ]
+    },
+    "flowStatus": {
+        "status": "COMPLETED",
+        "reason": "",
+        "validation": "PASS",
+        "score": "0"
+    },
+    "matchedData": {
+        "name": {
+            "apiValue": "HARTMUT MUSTERMANN",
+            "similarity": -1
+        },
+        "firstname": {
+            "apiValue": "HARTMUT",
+            "similarity": -1
+        },
+        "lastname": {
+            "apiValue": "MUSTERMANN",
+            "similarity": -1
+        },
+        "birthdate": {
+            "similarity": -1
+        },
+        "address": {
+            "similarity": -1
+        },
+        "overallSimilarity": -1
+    }
+}
+```
+
 ##### Open Banking – Affordability
 
 ##### Open Banking – Verify
