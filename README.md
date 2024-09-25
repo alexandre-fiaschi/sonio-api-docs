@@ -956,14 +956,14 @@ _Example_
                 "reason": "",
                 "reasonDetails": "",
                 "externalIds": {
-                    "tinkTransaction": "13710-xr-Nfqw-IQ63",
-                    "wizzardSessionKey": "CNWw5HO6YiVXBD7djYnurG7uOQJyEZgmw5B7EKVA"
+                    "tinkTransaction": "13XX0-XX-XXXXX-IXX3",
+                    "wizzardSessionKey": "CNWw5HO6XXXXXXXXXXXXXXXXXXXXXXX5B7EKVA"
                 },
                 "data": {
-                    "id": "xr_JwHX357024p9lVK3",
-                    "transaction": "13710-xr-Nfqw-IQ63",
+                    "id": "xr_JwXXXXXXXXp9lVK3",
+                    "transaction": "13XX0-XX-XXXXX-IXX3",
                     "account_holder": "MUSTERMANN, HARTMUT",
-                    "iban": "DE62888888880012345678",
+                    "iban": "DEXX888888880012XXXXXX",
                     "bic": "TESTDE88XXX",
                     "bank_name": "Testbank",
                     "country_id": "DE",
