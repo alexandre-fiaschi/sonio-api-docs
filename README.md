@@ -39,6 +39,10 @@ If you have any support request or feedback, please reach out to us at alexandre
 
 ## Reference V4
 
+### Environments
+
+- Staging Base URL: https://staging.id.sonio-group.com/api/v4/
+
 ### **Create a session (IDV, PoA)**
 
 ```http
@@ -127,11 +131,17 @@ Contains information (id, date created, expire, start url for starting the ident
 
 ### **Create a session (Open banking)**
 
+```http
+  POST api/v4/session
+```
+
 To create a session via Open Banking, use the same payload as for IDV, with the addition of the person’s first and last name, which are required for accurate data matching.
 
 _Example_
 
 ```
+[POST] api/v4/session
+
 {
   "customerId": "CUSTOMERID",
   "language": "en",
