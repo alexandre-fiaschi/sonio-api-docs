@@ -1202,9 +1202,10 @@ The status field can have one of the following values:
 Status codes:
 
 - 200 OK
-- 400 Bad input
-- 404 Not found
-- 500 Server error
+- 400 Bad Request
+- 401 Unauthorized
+- 404 Not Found
+- 500 Server Error
 
 General error message:
 
