@@ -1,8 +1,11 @@
 # Changelog
 
-## Introduction of Authentication via API Key
+## Introduction of Authentication via API Key on V4
 
-#### Effective Date: (To Be Updated)
+#### Effective Deployment Dates
+
+- Staging Deployment: (To Be Updated)
+- Production Deployment: (To Be Updated)
 
 NOTE: The effective date will be updated after the successful communication with all clients.
 
@@ -18,7 +21,7 @@ To access the following endpoints, you will now be required to include an API ke
 x-sonio-api-key: {apiKey}
 ```
 
-#### Affected Endpoints
+#### Affected Endpoints on V4
 
 ```
 - GET /session/:{sessionId}/result
