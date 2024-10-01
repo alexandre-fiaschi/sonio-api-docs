@@ -1188,7 +1188,8 @@ To ensure real-time interaction and synchronization between our platform and the
 
 The status field can have one of the following values:
 
-- **RESULT_CHANGED** –results changed
+<!-- - **RESULT_CHANGED** –results changed -->
+
 - **SESSION_CREATED** - a new session was created
 - **IDENTIFICATION_STARTED** - an identification was started
 - **COMPLETED** – a session was completed
