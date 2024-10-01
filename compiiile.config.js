@@ -1,6 +1,5 @@
 export default {
-  title: "Sonio",
+  title: "SONIO",
   logo: "./sonio_favicon.png",
-
   useAutoTitles: true,
 };

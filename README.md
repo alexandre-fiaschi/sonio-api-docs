@@ -1,5 +1,5 @@
-<!-- ![Logo](./.compiiile/public/sonio_light.jpg) -->
-<img id="logo" src="sonio_light.jpg" alt="Logo" style="width: auto; height: auto; padding-bottom: 40px;" />
+<img id="logo" src="sonio_light.png" alt="Logo" style="width: auto; height: auto; padding-bottom: 40px;" />
+<script src="./theme-logo-switch.js"></script>
 
 <!-- <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -27,7 +27,6 @@
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
   });
 </script> -->
-<script src="./theme-logo-switch.js"></script>
 
 # API Reference
 
