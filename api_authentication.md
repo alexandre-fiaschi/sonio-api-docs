@@ -1,5 +1,7 @@
 # API Authentication V4
 
+NOTE: The auth is being tested internally and will be communicated before reaching our staging environment.
+
 All requests to our API endpoints V4 require an API key. The API key serves as a unique identifier for your account and ensures that only authorized users can access the system.
 
 ### How to Include Your API Key

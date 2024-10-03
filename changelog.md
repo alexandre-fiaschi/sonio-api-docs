@@ -4,6 +4,8 @@
 
 #### Effective Deployment Dates
 
+NOTE: The auth is being tested internally and will be communicated before reaching our staging environment.
+
 - Staging Deployment: (To Be Updated)
 - Production Deployment: (To Be Updated)
 
