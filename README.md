@@ -68,9 +68,9 @@ If you have any support request or feedback, please reach out to us at alexandre
 | `title`      | `string` |             |
 | `firstname`  | `string` |             |
 | `lastname`   | `string` |             |
-| `middleName` | `string` |             |
+| `middlename` | `string` |             |
 | `maidenname` | `string` |             |
-| `otherName`  | `string` |             |
+| `othername`  | `string` |             |
 | `gender`     | `string` |             |
 | `birthdate`  | `string` |             |
 
@@ -308,9 +308,9 @@ Person - For POI or POA or any check that returns personal details
 | `title`      | `string or null` |                    |
 | `firstname`  | `string or null` |                    |
 | `lastname`   | `string or null` |                    |
-| `middleName` | `string or null` |                    |
-| `maidenName` | `string or null` |                    |
-| `otherName`  | `string or null` |                    |
+| `middlename` | `string or null` |                    |
+| `maidenname` | `string or null` |                    |
+| `othername`  | `string or null` |                    |
 | `gender`     | `string or null` | [M, m, W, w, U, u] |
 | `birthdate`  | `string or null` | 2016-12-31         |
 
